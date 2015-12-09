@@ -1,0 +1,12 @@
+language: ruby
+sudo: false
+
+script:
+  - nc -z -v community.joomla.org 80
+  - nc -z -v community.joomla.org 443
+  - nc -z -v developer.joomla.org 80
+  - nc -z -v developer.joomla.org 443
+  - nc -z -v joomla.org 80
+  - nc -z -v joomla.org 443
+  - nc -z -v www.joomla.org 80
+  - nc -z -v www.joomla.org 443
